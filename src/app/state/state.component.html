@@ -1,0 +1,13 @@
+<div>
+    City From Child = {{childCity}}
+    <div *ngFor="let item of states">
+        <div *ngIf="item.city==childCity">
+          State :{{item.state}}  
+        </div>
+    </div>
+    <div>
+        <app-city (myEventEmitter)="receiveDataFromChild($event)">
+           </app-city>
+    </div>
+</div>
+

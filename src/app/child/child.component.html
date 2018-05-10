@@ -1,0 +1,13 @@
+<div>
+  Child Component
+  <div>
+    Roll Number from Parent : {{childRoll}}
+  </div>
+  Selected Student
+  <div *ngFor="let student of students">
+      <div *ngIf="student.roll===childRoll">
+        <div>{{student.roll}}</div>
+        <div>{{student.name}}</div>
+      </div>
+  </div>
+</div>
